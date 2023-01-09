@@ -5,8 +5,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { ListGroup, ListGroupItem } from "reactstrap";
-// import cologne from "./products/cologne.jpg";
-// import watch from "./products/iwatch.jpg";
+// import cologne from "../products/cologne.jpg";
+// import watch from "../products/iwatch.jpg";
+
+
 
 
 class App extends React.Component {
@@ -19,24 +21,22 @@ class App extends React.Component {
         {
           id: 0,
           name: "Unisex Cologne",
-          image:' public/products/cologne'
-          
+          image: "products/cologne.jpg",
         },
         {
           id: 1,
           name: "Apple iWatch",
-          
-
+          image: "products/iwatch.jpg",
         },
         {
           id: 2,
-          name: "Unique Mug"
-         
+          name: "Unique Mug",
+          image: "products/mug.jpg",
         },
         {
           id: 3,
           name: "Mens Wallet",
-    
+          image: "products/wallet.jpg",
         },
       ],
     };
@@ -71,22 +71,22 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <ListGroup>
-          <h1>
-            <ListGroupItem
-              tag="a"
-              className="align-self-center py-2 w-50 bg-info text-dark"
-            >
-              <span>{this.state.title}</span>
-              <span className="cart">
-                <faShoppingCart />
-                0 items
-              </span>
-            </ListGroupItem>
-          </h1>
+          <ListGroup>
+            <h1>
+              <ListGroupItem
+                tag="a"
+                className="align-self-center py-2 w-50 bg-info text-dark"
+              >
+                <span>{this.state.title}</span>
+                <span className="cart">
+                  < faShoppingCart />
+                  0 items
+                  </span>
+              </ListGroupItem>
+            </h1>
 
-          {this.renderItems(this.state.items)}
-        </ListGroup>
+            {this.renderItems(this.state.items)}
+          </ListGroup>
       </div>
     );
   }
