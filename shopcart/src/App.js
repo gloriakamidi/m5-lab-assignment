@@ -21,22 +21,22 @@ class App extends React.Component {
         {
           id: 0,
           name: "Unisex Cologne",
-          image: "products/cologne.jpg",
+          image: "/products/cologne.jpg",
         },
         {
           id: 1,
           name: "Apple iWatch",
-          image: "products/iwatch.jpg",
+          image: "/products/iwatch.jpg",
         },
         {
           id: 2,
           name: "Unique Mug",
-          image: "products/mug.jpg",
+          image: "/products/mug.jpg",
         },
         {
           id: 3,
           name: "Mens Wallet",
-          image: "products/wallet.jpg",
+          image: "/products/wallet.jpg",
         },
       ],
     };
@@ -59,14 +59,6 @@ class App extends React.Component {
     );
   }
 
-  // render() {
-  //   let imgGallery=[
-  //     {src:'./products/cologne.jpg'}
-  //   ]
-  //   return(
-  //     imgGallery.map((index)=> <img src)
-  //   )
-  // }
 
   render() {
     return (
