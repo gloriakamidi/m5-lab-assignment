@@ -49,7 +49,9 @@ class App extends React.Component {
           <ListGroupItem className="align-self-center py-2 w-50">
             <div key={item.id}>
               <p>{item.name}</p>
-              <span>{item.image}</span>
+              <span>
+              <img src={item.image}/>
+              </span>
               <span id="qty" className='box'>0</span>
               <span className='qtity'> quantity </span>
             </div>
